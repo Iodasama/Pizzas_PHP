@@ -63,20 +63,54 @@ public function ship () {
        
 
     }
-}
+} 
     
+// function getIngredient1 () { 
+
+//     return $this-> ingredient1 ;
+// }
 
 
 
+   public function getIngredients () { 
+
+    
+        
+        $ingredients = [$this -> ingredient1,$this -> ingredient2, $this -> ingredient3];
+    
+        return $ingredients;
+
+    }
+   
 
 }
+
+ 
+
 
 $newBrandPizza = new Pizza ("XL","tomate","champignons","jambon","oeuf");  // on etablit une nouvelle instance de classe et c'est aussi un objet
 $newBrandPizza->pay(); // on verifie si la pizza est payé 
 $newBrandPizza->ship(); // on verifie si la pizza est payé 
 
+;
 
-var_dump ($newBrandPizza);
+foreach ($newBrandPizza->getIngredients() as $ingredient) {
+
+    echo $ingredient . '<br>';
+
+}
+
+// $ingredientsNewPizza = $newBrandPizza->getIngredients();
+
+// foreach ( $ingredientsNewPizza as $ingredient) {
+
+//     echo $ingredient;
+
+// }
+
+
+
+
 
 //va permettre qu'une nouvelle Pizza soit créée (nouvelle instance)
 
