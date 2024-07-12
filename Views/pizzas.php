@@ -69,7 +69,10 @@ public function ship () {
 
 //     return $this-> ingredient1 ;
 // }
+    public function getPrice () {
 
+        return $this->price;
+    }
 
 
    public function getIngredients () { 
@@ -81,7 +84,11 @@ public function ship () {
         return $ingredients;
 
     }
-   
+    public function getSize () {
+
+        return $this->size;
+    }
+
 
 }
 
@@ -99,6 +106,8 @@ foreach ($newBrandPizza->getIngredients() as $ingredient) {
     echo $ingredient . '<br>';
 
 }
+echo $newBrandPizza->getSize().'<br>' ;
+echo $newBrandPizza->getPrice();
 
 // $ingredientsNewPizza = $newBrandPizza->getIngredients();
 
