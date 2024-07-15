@@ -1,15 +1,15 @@
 <?php 
-
+require_once ('./Meal.php');
 // on instancie une class Pizza et on ajoute des proprietes 
-class Pizza { 
-
-    private $size;
-    private  $price;
+class Pizza extends Meal { 
+// je fais hériter la classe Hotdog ("enfant") de la classe Meal ("parent")
+    protected $size;
+    protected $price;
     private  $base;
     private  $ingredient1;
     private  $ingredient2;
     private  $ingredient3;
-    private  $status;
+    protected $status;
     private  $orderAt;
 
 
@@ -103,7 +103,7 @@ $newBrandPizza->ship(); // on verifie si la pizza est payé
 
 foreach ($newBrandPizza->getIngredients() as $ingredient) {
 
-    echo $ingredient . '<br>';
+   echo $ingredient . '<br>';
 
 }
 echo $newBrandPizza->getSize().'<br>' ;
