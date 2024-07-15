@@ -20,3 +20,6 @@ try {
     echo "Erreur de connexion : " . $e->getMessage();
 }
 // try & catch pour la gestion d'erreurs et renvoie un message d'erreur si pb 
+
+
+// on teste en chargeant dans son  navigateur n'importe quel fichier de view qu'on a déjà utilisé pour voir si t'as une erreur ou non
