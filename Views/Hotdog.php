@@ -5,10 +5,10 @@ require_once ('./Meal.php');
 
 // je fais hériter la classe Hotdog ("enfant") de la classe Meal ("parent")
 class Hotdog extends Meal{ 
-    protected $size;
-    protected $price;
-    protected $status;
-    private $orderAt;
+    // protected $size;
+    // protected $price;
+    // protected $status;
+
     private $bread;
 
     function __construct($size,$bread){ 

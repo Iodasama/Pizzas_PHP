@@ -8,7 +8,7 @@ class Meal {
 
 	protected $status;
 
-	protected $orderedAt;
+	protected $orderAt;
 
 	protected $size;
 

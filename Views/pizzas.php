@@ -10,7 +10,8 @@ class Pizza extends Meal {
     private  $ingredient2;
     private  $ingredient3;
     protected $status;
-    private  $orderAt;
+
+
 
 
  //je crée mon constructeur
@@ -100,14 +101,14 @@ $newBrandPizza->pay(); // on verifie si la pizza est payé
 $newBrandPizza->ship(); // on verifie si la pizza est payé 
 
 ;
+var_dump($newBrandPizza);
+// foreach ($newBrandPizza->getIngredients() as $ingredient) {
 
-foreach ($newBrandPizza->getIngredients() as $ingredient) {
+//    echo $ingredient . '<br>';
 
-   echo $ingredient . '<br>';
-
-}
-echo $newBrandPizza->getSize().'<br>' ;
-echo $newBrandPizza->getPrice();
+// }
+// echo $newBrandPizza->getSize().'<br>' ;
+// echo $newBrandPizza->getPrice();
 
 // $ingredientsNewPizza = $newBrandPizza->getIngredients();
 
