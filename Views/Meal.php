@@ -4,7 +4,7 @@
 
 
 class Meal {
-	protected $price;
+	protected $price;   // si en private irrecuperable pour enfant
 
 	protected $status;
 
